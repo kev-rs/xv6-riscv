@@ -6,6 +6,11 @@
 #include "spinlock.h"
 #include "proc.h"
 
+// [+] New system call!
+uint64 sys_getyear(void) {
+  return 1975;
+}
+
 uint64
 sys_exit(void)
 {
